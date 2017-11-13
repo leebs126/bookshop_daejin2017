@@ -93,7 +93,7 @@ public class CartControllerImpl extends BaseController implements CartController
 		String _cart_id=request.getParameter("cart_id");
 		int cart_id=Integer.parseInt(_cart_id);
 		cartService.deleteCartGoods(cart_id);
-		mav.setViewName("redirect:/cart/myCartList.do");
+		mav.setViewName("redirect:/cart/myCartMain.do");
 		return mav;
 	}
 }
